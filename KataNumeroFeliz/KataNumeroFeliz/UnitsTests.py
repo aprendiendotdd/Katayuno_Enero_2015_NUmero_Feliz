@@ -20,8 +20,8 @@ class Test_KataNumeroFeliz(unittest.TestCase):
     def test_Devuelve_Cuadrado_SI_No_Es_Feliz(self):
         self.assertEqual(4, self.validacion.GetEsFeliz(2))
 
-    def test_Devuelve_Suma_de_Cuadrados_SI_No_Es_Feliz_Un_Numero_De_Dos_digitos(self):
-        self.assertEqual(2, self.validacion.GetEsFeliz(11))
+    def test_Devuelve_Suma_de_Cuadrados_SI_No_Es_Feliz_Un_Numero_De_Mas_De_Un_digito(self):
+        self.assertEqual(5, self.validacion.GetEsFeliz(12))
 
 
     
