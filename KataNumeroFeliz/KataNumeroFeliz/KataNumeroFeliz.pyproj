@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2aa32d5d-4cf2-41dd-bd02-0897d9f89c84</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>KataNumeroFeliz.py</StartupFile>
+    <StartupFile>Operaciones.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +22,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="KataNumeroFeliz.py" />
+    <Compile Include="Operaciones.py" />
     <Compile Include="UnitsTests.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validaciones.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
