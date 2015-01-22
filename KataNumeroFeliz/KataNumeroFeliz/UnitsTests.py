@@ -4,15 +4,18 @@ from Operaciones import *
 
 class Test_KataNumeroFeliz(unittest.TestCase):
 
+    def setUp(self):
+        self.validacion = Validaciones()
+        return super(Test_KataNumeroFeliz, self).setUp()
+
+    def tearDow(self):
+        pass
+
     def test_EsNumeroEnteroPositivo(self):
-        validacion = Validaciones()
-        result = validacion.GetNumeroValido(1)
-        self.assertTrue(result)
+        self.assertTrue(self.validacion.GetNumeroValido(1))
 
     def test_EsFelizSiResultadoEs1(self):
-        esFeliz = Validaciones()
-        result = esFeliz.GetEsFeliz(1)
-        self.assertEqual(1, result)
+        self.assertEqual(1, self.validacion.GetEsFeliz(1))
     
     #def test_CuadradoDeUnNumero(self):
     #    operaciones = Operaciones()
