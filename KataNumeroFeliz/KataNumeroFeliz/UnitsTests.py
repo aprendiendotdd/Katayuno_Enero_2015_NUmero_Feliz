@@ -1,8 +1,8 @@
-import unittest
+import unittest 
+from KataNumeroFeliz import *
 
-class Test_UnitsTests(unittest.TestCase):
-    def test_A(self):
-        self.fail("Not implemented")
-
-if __name__ == '__main__':
-    unittest.main()
+class Test_KataNumeroFeliz(unittest.TestCase):
+    def test_CuadradoDeUnNumero(self):
+        operaciones = Operaciones()
+        result = operaciones.GetCuadrado(2)
+        self.assertEqual(4,result)
