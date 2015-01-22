@@ -16,6 +16,11 @@ class Test_KataNumeroFeliz(unittest.TestCase):
 
     def test_EsFelizSiResultadoEs1(self):
         self.assertEqual(1, self.validacion.GetEsFeliz(1))
+
+    def test_Devuelve_Cuadrado_SI_No_Es_Feliz(self):
+        self.assertEqual(4, self.validacion.GetEsFeliz(2))
+
+
     
     #def test_CuadradoDeUnNumero(self):
     #    operaciones = Operaciones()
