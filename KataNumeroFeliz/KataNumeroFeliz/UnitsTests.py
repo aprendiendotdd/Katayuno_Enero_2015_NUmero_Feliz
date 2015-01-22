@@ -8,6 +8,11 @@ class Test_KataNumeroFeliz(unittest.TestCase):
         validacion = Validaciones()
         result = validacion.GetNumeroValido(1)
         self.assertTrue(result)
+
+    def test_EsFelizSiResultadoEs1(self):
+        esFeliz = Validaciones()
+        result = validaciones.GetEsFeliz(1)
+        self.assertEqual(1, result)
     
     #def test_CuadradoDeUnNumero(self):
     #    operaciones = Operaciones()
