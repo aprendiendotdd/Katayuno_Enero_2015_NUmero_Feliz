@@ -1,11 +1,12 @@
 import unittest 
-from KataNumeroFeliz import *
+from Validaciones import *
+from Operaciones import *
 
 class Test_KataNumeroFeliz(unittest.TestCase):
 
-    def test_EsNumeroNatural(self):
+    def test_EsNumeroEnteroPositivo(self):
         validacion = Validaciones()
-        resutl = validacion.GetNumeroValido()
+        result = validacion.GetNumeroValido(1)
         self.assertTrue(result)
     
     #def test_CuadradoDeUnNumero(self):
@@ -16,9 +17,3 @@ class Test_KataNumeroFeliz(unittest.TestCase):
     #def test_SumaCuadradosDigitos(sefl):
     #    operaciones = Operaciones()
     #    result = operaciones.GetSuma
-
-        
-
-
-if __name__ == '__main__':
-unittest.main()
