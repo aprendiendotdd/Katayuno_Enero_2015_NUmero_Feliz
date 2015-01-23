@@ -12,11 +12,11 @@ class Validaciones():
          return (self.GetCalculoEsFeliz(numero) == 1)
 
     def GetFinaliceCalculo(self, iteracion, numero):
-        return (iteracion != 20) and (numero != 1)
+        return (iteracion == 20) and (numero == 1)
 
     def GetCalculoEsFeliz(self, numero):           
         iteracion = 0
-        while (self.GetFinaliceCalculo(iteracion, numero)):
+        while (not self.GetFinaliceCalculo(iteracion, numero)):
             iteracion += 1
             numero = self.operaciones.GetSumaCuadrados(numero)
         return numero
