@@ -8,8 +8,11 @@ class Validaciones():
     def GetNumeroValido(self, numero):
         return (numero > 0)
 
-    def GetEsFeliz(self, numero):
-        if (numero / 10 != 0):
-            return self.operaciones.GetSumaCuadrados(numero)
-        else:
-            return self.operaciones.GetCuadrado(numero);
+    def GetEsFeliz(self, numero):        
+        return (self.GetCalculoEsFeliz(numero) == 1)
+
+    def GetCalculoEsFeliz(self, numero):        
+        for i in range (1, 20):
+            numero = self.operaciones.GetSumaCuadrados(numero)
+        return numero
+            
