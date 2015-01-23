@@ -25,12 +25,5 @@ class Test_KataNumeroFeliz(unittest.TestCase):
         self.assertEqual(14, self.validacion.GetEsFeliz(123))
         self.assertEqual(4, self.validacion.GetEsFeliz(1111))
 
-    
-    #def test_CuadradoDeUnNumero(self):
-    #    operaciones = Operaciones()
-    #    result = operaciones.GetCuadrado(2)
-    #    self.assertEqual(4,result)
-    
-    #def test_SumaCuadradosDigitos(sefl):
-    #    operaciones = Operaciones()
-    #    result = operaciones.GetSuma
+    def test_Repetir_hasta_20_veces_para_saber_si_es_feliz():
+        self.assertEqual(1, self.validacion.GetEsFeliz(19))
